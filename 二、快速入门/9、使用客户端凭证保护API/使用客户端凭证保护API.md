@@ -1,10 +1,6 @@
 # IdentityServer4 中文文档 -9- （快速入门）使用客户端凭证保护API
--------------------------------------------------
 
-原文：http://docs.identityserver.io/en/release/quickstarts/1_client_credentials.html
-
-上一篇：[IdentityServer4 中文文档 -8- （快速入门）设置和概览](http://www.cnblogs.com/ideck/p/ids_quickstarts_8.html)
-下一篇：[IdentityServer4 中文文档 -10- （快速入门）使用密码保护API](http://www.cnblogs.com/ideck/p/ids_quickstarts_10.html)
+--------------------------------------------------------------------------------------
 
 快速入门展示了使用 IdentityServer 保护 API 的最基础的场景。
 
@@ -105,8 +101,9 @@ public class IdentityController : ControllerBase
 ### 配置
 
 接下来，添加认证中间件到 API 宿主。该中间件的主要工作是：
- * 验证输入的令牌以确保它来自可信任的发布者（IdentityServer）;
- * 验证令牌是否可用于该 api（也就是 Scope）。
+
+* 验证输入的令牌以确保它来自可信任的发布者（IdentityServer）;
+* 验证令牌是否可用于该 api（也就是 Scope）。
 
 将 _`IdentityServer4.AccessTokenValidation`_ NuGet 程序包添加到你的 API 项目：
 
@@ -214,6 +211,3 @@ else
 * 尝试在 API 未运行时(unavailable)调用它
 * 不向 API 发送令牌
 * 配置 API 为需要不同于令牌中的 scope
-
-上一篇：[IdentityServer4 中文文档 -8- （快速入门）设置和概览](http://www.cnblogs.com/ideck/p/ids_quickstarts_8.html)
-下一篇：[IdentityServer4 中文文档 -10- （快速入门）使用密码保护API](http://www.cnblogs.com/ideck/p/ids_quickstarts_10.html)

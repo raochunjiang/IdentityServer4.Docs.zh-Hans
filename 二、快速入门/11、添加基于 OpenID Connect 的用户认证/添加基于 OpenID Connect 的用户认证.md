@@ -1,11 +1,6 @@
 # IdentityServer4 中文文档 -11- （快速入门）添加基于 OpenID Connect 的用户认证
 
---------------------------------------------------------------------------
-
-原文：http://docs.identityserver.io/en/release/quickstarts/3_interactive_login.html
-
-上一篇：[IdentityServer4 中文文档 -10- （快速入门）使用密码保护API](http://www.cnblogs.com/ideck/p/ids_quickstarts_10.html)
-下一篇：[IdentityServer4 中文文档 -12- （快速入门）添加外部认证支持](http://www.cnblogs.com/ideck/p/ids_quickstarts_12.html)
+---------------------------------------------------------------------------------------------------------
 
 在这个快速启动中，我们希望通过OpenID Connect协议向我们的 IdentityServer 添加对交互式用户身份验证的支持。
 
@@ -77,7 +72,7 @@ app.UseOpenIdConnectAuthentication(new OpenIdConnectOptions
         <dd>@claim.Value</dd>
     }
 </dl>
-``` 
+```
 
 现在，如果你使用浏览器导航到上述控制器，一个Mvc客户端将视图重定向到 IdentityServer - 这会导致错误，因为 MVC 客户端还没有注册（在 IdentityServer 上定义）呢。
 
@@ -232,10 +227,3 @@ public static List<TestUser> GetUsers()
 请随意添加更多的身份信息 - 还有更多的 scopes。OpenID Connect 中间件上的 `Scope` 属性是你用来配置哪些 Scopes 将在认证期间被发送到 IdentityServer 的地方。
 
 值得注意的是，对令牌中身份信息的遍历是一个扩展点 - `IProfileService`。因为我们正在使用 `AddTestUser`，所以默认使用的是 `TestUserProfileService`。你可以检出[这里的源代码](https://github.com/IdentityServer/IdentityServer4/blob/dev/src/IdentityServer4/Test/TestUserProfileService.cs)来查看它的工作原理。
-
-
-
-
-
-上一篇：[IdentityServer4 中文文档 -10- （快速入门）使用密码保护API](http://www.cnblogs.com/ideck/p/ids_quickstarts_10.html)
-下一篇：[IdentityServer4 中文文档 -12- （快速入门）添加外部认证支持](http://www.cnblogs.com/ideck/p/ids_quickstarts_12.html)

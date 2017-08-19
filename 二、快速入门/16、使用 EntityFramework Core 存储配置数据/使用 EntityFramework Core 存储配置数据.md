@@ -1,10 +1,6 @@
 # IdentityServer4 中文文档 -16- （快速入门）使用 EntityFramework Core 存储配置数据
 
---------------------------------------------------------------------------
-
-原文：http://docs.identityserver.io/en/release/quickstarts/8_entity_framework.html
-
-上一篇：[IdentityServer4 中文文档 -15- （快速入门）添加 JavaScript 客户端](http://www.cnblogs.com/ideck/p/ids_quickstarts_15.html)
+--------------------------------------------------------------------------------------------------------------
 
 IdentityServer 是为可扩展性设计的，其中一个扩展点是其所需数据的存储机制。该快速入门展示了如何配置 IdentityServer 以使用 EntityFramework（EF）作为其数据存储机制（取代目前为止我们一直使用的内存实现）。
 
@@ -163,5 +159,3 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerF
 ## 运行客户端应用程序
 
 现在你应该能够运行所有现有的客户端应用程序并登陆、获取令牌以及调用API了 —— 这些都是基于数据库配置的。
-
-上一篇：[IdentityServer4 中文文档 -15- （快速入门）添加 JavaScript 客户端](http://www.cnblogs.com/ideck/p/ids_quickstarts_15.html)

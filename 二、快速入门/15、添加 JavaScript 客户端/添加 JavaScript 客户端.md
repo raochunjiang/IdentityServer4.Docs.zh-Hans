@@ -2,11 +2,6 @@
 
 -------------------------------------------------------------------------------------------
 
-原文：http://docs.identityserver.io/en/release/quickstarts/7_javascript_client.html
-
-上一篇：[IdentityServer4 中文文档 -14- （快速入门）使用 ASP.NET Core Identity](http://www.cnblogs.com/ideck/p/ids_quickstarts_14.html)
-下一篇：[IdentityServer4 中文文档 -16- （快速入门）使用 EntityFramework Core 存储配置数据](http://www.cnblogs.com/ideck/p/ids_quickstarts_16.html)
-
 该快速入门将展示如何搭建一个 JavaScript 客户端应用程序，其中的用户将登陆到 IdentityServer，使用 IdentityServer 发布的访问令牌调用 Web API，然后从 IdentityServer 注销。
 
 ## 新的 JavaScript 客户端项目
@@ -102,6 +97,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerF
 </body>
 </html>
 ```
+
 ### app.js
 
 该文件将包含我们应用程序的主要代码。首先我们要在里面添加一个帮助器函数来将消息记录到 `<pre>` 标签：
@@ -261,7 +257,7 @@ public void ConfigureServices(IServiceCollection services)
         .AddAuthorization()
         .AddJsonFormatters();
 }
-``` 
+```
 
 最后，在 `Configure` 方法中将 CORS 中间件添加到管道：
 
@@ -301,8 +297,3 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerF
 最后点击 “注销” 以注销用户。
 
 你现在已经入门了使用 IdentityServer 进行登录，注销以及认证 Web API 调用的 JavaScript 客户端应用程序。
-
-
-
-上一篇：[IdentityServer4 中文文档 -14- （快速入门）使用 ASP.NET Core Identity](http://www.cnblogs.com/ideck/p/ids_quickstarts_14.html)
-下一篇：[IdentityServer4 中文文档 -16- （快速入门）使用 EntityFramework Core 存储配置数据](http://www.cnblogs.com/ideck/p/ids_quickstarts_16.html)

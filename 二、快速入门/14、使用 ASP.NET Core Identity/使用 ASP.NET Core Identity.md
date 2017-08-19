@@ -1,11 +1,6 @@
 # IdentityServer4 中文文档 -14- （快速入门）使用 ASP.NET Core Identity
 
---------------------------------------------------------------------------
-
-原文：http://docs.identityserver.io/en/release/quickstarts/6_aspnet_identity.html
-
-上一篇：[IdentityServer4 中文文档 -13- （快速入门）切换到混合流并添加 API 访问](http://www.cnblogs.com/ideck/p/ids_quickstarts_13.html)
-下一篇：[IdentityServer4 中文文档 -15- （快速入门）添加 JavaScript 客户端](http://www.cnblogs.com/ideck/p/ids_quickstarts_15.html)
+-------------------------------------------------------------------------------------------
 
 IdentityServer 是为灵活性而设计的，其中的表现之一就是，它允许你使用任何你想要用的数据库来存储你的用户以及他们的数据（包括账户密码）。如果你正在从一个全新的用户数据库开始，那么 ASP.NET Identity 是你的选项之一。这个快速入门显示了如何以 IdentityServer 的方式使用 ASP.NET identity。
 
@@ -19,11 +14,11 @@ IdentityServer 是为灵活性而设计的，其中的表现之一就是，它�
 
 从创建一个新的 “ASP.NET Core Web 应用程序”项目开始：
 
-![](创建 IdentityServerWithAspNetIdentity项目.png)
+![](创建IdentityServerWithAspNetIdentity项目.png)
 
 然后选择 “Web 应用程序” 选项：
 
-![](选择 Web 应用程序.png)
+![](选择Web应用程序.png)
 
 然后点击“更改身份验证”按钮，选择“个人用户账户”（这意味着使用的是 ASP.NET Identity）：
 
@@ -73,6 +68,7 @@ new Client
     AllowOfflineAccess = true
 }
 ```
+
 ## 配置 IdentityServer
 
 跟之前一样，IdentityServer 需要在 Startup.cs 的 `ConfigureServices` 和 `Configure` 中进行配置。
@@ -184,6 +180,3 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerF
 之前快速入门中的 IdentityServer 项目提供了一个授权确认页面，一个错误页面，以及一个注销页面，现在这些丢失的代码片段可以简单地从先前的快速入门项目中拷贝过来。做完这一步，你就可以将旧的 IdentityServer 项目删掉/清除了。还有，做完这一步后别忘了重新启用 MVC 客户端配置的授权确认页（RequireConsent=true 标记）。
 
 [当前快速入门的样例代码](https://github.com/IdentityServer/IdentityServer4.Samples/tree/dev/Quickstarts/6_AspNetIdentity)已经为你完成了这些步骤，所以你可以快速地开始使用所有这些特性。祝你愉快！
-
-上一篇：[IdentityServer4 中文文档 -13- （快速入门）切换到混合流并添加 API 访问](http://www.cnblogs.com/ideck/p/ids_quickstarts_13.html)
-下一篇：[IdentityServer4 中文文档 -15- （快速入门）添加 JavaScript 客户端](http://www.cnblogs.com/ideck/p/ids_quickstarts_15.html)

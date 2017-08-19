@@ -2,11 +2,6 @@
 
 ------------------------------------------------------------------------------------
 
-原文：http://docs.identityserver.io/en/release/quickstarts/2_resource_owner_passwords.html
-
-上一篇：[IdentityServer4 中文文档 -9- （快速入门）使用客户端凭证保护API](http://www.cnblogs.com/ideck/p/ids_quickstarts_9.html)
-下一篇：[IdentityServer4 中文文档 -11- （快速入门）添加基于 OpenID Connect 的用户认证](http://www.cnblogs.com/ideck/p/ids_quickstarts_11.html)
-
 **OAuth 2.0 资源所有者密码授权** 允许一个客户端发送用户名和密码到令牌服务并获得一个表示该用户访问令牌。
 
 （OAuth 2.0） **规范** 建议仅对“受信任”的应用程序使用资源所有者密码授权。一般来说，当你想要验证一个用户并请求访问令牌的时候，使用交互式 OpenID Connect 流通常会更好。
@@ -17,7 +12,7 @@
 
 就像基于内存存储的资源（即 范围 Scopes）和客户端一样，对于用户也可以这样做。
 
-> 注意：查看基于 ASP.NET Identity 的快速入门以获得更多关于如何正确存储和管理用户账户的信息。 
+> 注意：查看基于 ASP.NET Identity 的快速入门以获得更多关于如何正确存储和管理用户账户的信息。
 
 `TestUser` 类型表示一个测试用户及其身份信息。让我们向配置类（如果你有严格按照顺序进行演练，那么配置类应该在 QuickstartIdentityServer 项目的 Config.cs 文件中）中添加以下代码以创建一对用户：
 
@@ -117,7 +112,3 @@ Console.WriteLine("\n\n");
 相比，资源所有者密码授权有一个很小但很重要的区别。访问令牌现在将包含一个 `sub` 信息，该信息是用户的唯一标识。`sub` 信息可以在调用 API 后通过检查内容变量来被查看，并且也将被控制台应用程序显示到屏幕上。
 
 `sub` 信息的存在（或缺失）使得 API 能够区分代表客户端的调用和代表用户的调用。
-
-
-上一篇：[IdentityServer4 中文文档 -9- （快速入门）使用客户端凭证保护API](http://www.cnblogs.com/ideck/p/ids_quickstarts_9.html)
-下一篇：[IdentityServer4 中文文档 -11- （快速入门）添加基于 OpenID Connect 的用户认证](http://www.cnblogs.com/ideck/p/ids_quickstarts_11.html)

@@ -1,11 +1,6 @@
 # IdentityServer4 中文文档 -13- （快速入门）切换到混合流并添加 API 访问
 
---------------------------------------------------------------------------
-
-原文：http://docs.identityserver.io/en/release/quickstarts/5_hybrid_and_api_access.html
-
-上一篇：[IdentityServer4 中文文档 -12- （快速入门）添加外部认证支持](http://www.cnblogs.com/ideck/p/ids_quickstarts_12.html)
-下一篇：[IdentityServer4 中文文档 -14- （快速入门）使用 ASP.NET Core Identity](http://www.cnblogs.com/ideck/p/ids_quickstarts_14.html)
+----------------------------------------------------------------------------------------------
 
 在之前的快速入门中我们探讨了 API 访问和用户认证。现在我们想要把这两部分结合起来。
 
@@ -107,6 +102,3 @@ public async Task<IActionResult> CallApiUsingUserAccessToken()
     return View("json");
 }
 ```
-
-上一篇：[IdentityServer4 中文文档 -12- （快速入门）添加外部认证支持](http://www.cnblogs.com/ideck/p/ids_quickstarts_12.html)
-下一篇：[IdentityServer4 中文文档 -14- （快速入门）使用 ASP.NET Core Identity](http://www.cnblogs.com/ideck/p/ids_quickstarts_14.html)

@@ -2,6 +2,8 @@
 
 IdentityServer4 中文文档 
 
+![扫码捐赠](./donate.png)
+
 你还可以 去 [博客园](http://www.cnblogs.com/ideck/p/ids_index.html) 查看 这些文档
 
 ## 大纲

@@ -2,8 +2,6 @@
 
 IdentityServer4 中文文档 
 
-![扫码捐赠](./donate.png)
-
 你还可以 去 [博客园](http://www.cnblogs.com/ideck/p/ids_index.html) 查看 这些文档
 
 ## 大纲
@@ -26,4 +24,6 @@ IdentityServer4 中文文档
 > >[13、切换到混合流并添加 API 回访](./二、快速入门/13、切换到混合流并添加API回访/切换到混合流并添加API回访.md)   
 > >[14、使用 ASP.NET Core Identity](./二、快速入门/14、使用ASP.NETCoreIdentity/使用ASP.NETCoreIdentity.md)   
 > >[15、添加 JavaScript 客户端](./二、快速入门/15、添加JavaScript客户端/添加JavaScript客户端.md)    
-> >[16、使用 EntityFramework Core 存储配置数据](./二、快速入门/16、使用EntityFrameworkCore存储配置数据/使用EntityFrameworkCore存储配置数据.md)   
+> >[16、使用 EntityFramework Core 存储配置数据](./二、快速入门/16、使用EntityFrameworkCore存储配置数据/使用EntityFrameworkCore存储配置数据.md)
+
+![扫码捐赠](./donate.png)

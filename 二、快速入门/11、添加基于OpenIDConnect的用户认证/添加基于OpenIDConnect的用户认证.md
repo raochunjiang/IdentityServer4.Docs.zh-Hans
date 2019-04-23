@@ -134,7 +134,7 @@ public static IEnumerable<Client> GetClients()
             AllowedGrantTypes = GrantTypes.Implicit,
             // 登录后重定向到的地址
             RedirectUris = { "http://localhost:5002/signin-oidc" },
-            // 注销后重定向到的地址
+            // 设置授权的scopes
             AllowedScopes = new List<string>
             {
                 IdentityServerConstants.StandardScopes.OpenId,
